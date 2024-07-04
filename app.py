@@ -13,10 +13,10 @@ def predict_output(input_values):
     return prediction[0]
 
 # Streamlit app
-st.title('Machine Learning Model Prediction')
+st.title('Particle size distribution predictor')
 
 # Take user input
-st.header('Enter the input values:')
+st.header('Enter the parameter values:')
 input1 = st.number_input('Mill Speed (RPM)', value=0.0)
 input2 = st.number_input('Inlet Feed Size (mm)', value=0.0)
 input3 = st.number_input('Inlet Air Flow (m3/min)', value=0.0)
