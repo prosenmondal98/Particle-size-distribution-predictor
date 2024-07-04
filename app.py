@@ -29,4 +29,6 @@ input_values = [input1, input2, input3, input4, input5]
 # Predict and display the result
 if st.button('Predict'):
     prediction = predict_output(input_values)
+    if prediction<0:
+        st.write('Wrong Input')
     st.write(f'The predicted output is: {prediction}')
