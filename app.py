@@ -31,4 +31,5 @@ if st.button('Predict'):
     prediction = predict_output(input_values)
     if prediction<0:
         st.write('Wrong Input')
-    st.write(f'The predicted output is: {prediction}')
+    else:
+        st.write(f'The predicted output is: {prediction}')
